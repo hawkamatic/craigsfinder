@@ -1,0 +1,17 @@
+1. Splash screen
+    -push to welcome screen or login State
+    - if logged in, load main 
+    -if not, push to intro
+2. Intro screen
+    -slide show demonstrating appBar
+    -permission request
+   
+3. Sign up page 
+    -google login
+    -city 
+    ==set timer rate
+    ==set behavior? 
+4. Main screen
+    -sqllite implementation of previous jobs 
+    -hyperlinks to each one 
+    - collect job location

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class GigPosting {
-  final String title;
-  final String description;
+  final String? title;
+  final String? description;
 
   GigPosting({
     required this.title,

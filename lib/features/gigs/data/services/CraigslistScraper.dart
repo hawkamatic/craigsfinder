@@ -1,3 +1,5 @@
+import 'package:html/dom.dart';
+
 import '../models/GigPosting.dart';
 import 'dart:async';
 import 'dart:io';
@@ -38,11 +40,11 @@ class CraigslistScraper {
     List<GigPosting> gigPostings = [];
     for (Element gigPostingElement in gigPostingElements) {
       // Get the title of the gig posting.
-      String title = gigPostingElement.querySelector('.result-title').text;
+      String? title = gigPostingElement.querySelector('.result-title')?.text;
 
       // Get the description of the gig posting.
-      String description =
-          gigPostingElement.querySelector('.result-posting').text;
+      String? description =
+          gigPostingElement.querySelector('.result-posting')?.text;
 
       // Create a new GigPosting object.
       GigPosting gigPosting = GigPosting(

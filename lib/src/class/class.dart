@@ -4,7 +4,11 @@ class MovingJob {
   final String description;
   final String price;
 
-  MovingJob({this.title, this.location, this.description, this.price});
+  MovingJob(
+      {required this.title,
+      required this.location,
+      required this.description,
+      required this.price});
 
   factory MovingJob.fromJson(Map<String, dynamic> json) {
     return MovingJob(
